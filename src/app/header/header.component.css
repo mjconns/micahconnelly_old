@@ -1,0 +1,19 @@
+.spacey {
+  flex: 1 1 auto;
+}
+
+.clickyCons {
+  margin-left: auto;
+}
+
+.clickyCons a {
+  color: #ffffff !important;
+}
+
+.clickyCons a:hover {
+  color: #7fc090 !important;
+}
+
+.linky {
+  padding: 5px;
+}

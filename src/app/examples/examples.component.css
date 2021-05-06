@@ -1,0 +1,46 @@
+h2 {
+  margin-left: 40%;
+}
+
+#headerh2:before {
+  content: " ";
+  top: 50%;
+  height: 2px;
+  width: 45px;
+  margin: 6px 10px;
+  display: inline-block;
+  zoom: 1;
+  background: #333;
+}
+
+#headerh2:after {
+  content: " ";
+  top: 50%;
+  height: 2px;
+  width: 45px;
+  margin: 6px 10px;
+  display: inline-block;
+  zoom: 1;
+  background: #333;
+}
+
+h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: #303030;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.card {
+  margin-left: 40%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

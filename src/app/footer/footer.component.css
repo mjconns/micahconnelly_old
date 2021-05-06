@@ -1,0 +1,37 @@
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(253, 252, 252, 0), rgba(252, 252, 252, 0.75), rgba(253, 252, 252, 0));
+}
+
+.crest {
+  margin-left: 50%
+}
+
+#disc {
+  padding: 5px;
+}
+
+.docs-footer {
+  padding: 12px;
+  font-size: 12px;
+}
+.docs-footer {
+  background: #1d1b1d;
+  color: #fff;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+.footer-logo {
+  width: 45px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
