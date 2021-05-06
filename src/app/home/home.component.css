@@ -1,0 +1,279 @@
+.mat-card-none {
+  border: none;
+  padding: 0px 16px;
+  margin: 0px;
+  box-shadow: none;
+  background-color: #fafafa;
+}
+
+.intro-text {
+  margin: 0;
+  position: absolute;
+  width: inherit;
+  color: white;
+  text-align: center;
+  padding-top: 25%;
+}
+
+.fixedHeader {
+  width: 100%;
+}
+
+.intro-text .intro-lead-in {
+  margin-bottom: 1em;
+  font-size: 2.5em;
+  text-shadow: 2px 1px #1d1b1d;
+  font-style: italic;
+  line-height: 1em;
+}
+
+.intro-text .intro-heading {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-size: 2em;
+  text-shadow: 1px 1px #1d1b1d;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.heroImg {
+  min-height: 275px;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-text .intro-heading {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+  }
+
+  .heroImg {
+    min-height: 500px;
+  }
+}
+
+@media only screen and (min-width: 1084px) {
+  .intro-text .intro-heading {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 1em;
+  }
+}
+
+.raisonCard {
+  background-image: url("../../assets/roaderland.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  margin-top: 10px;
+}
+
+.finCard {
+  background-image: url("../../assets/roaderland.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  margin-top: 10px;
+}
+
+.info-card {
+  z-index: 1;
+  width: 80%;
+  top: 10%;
+  left: 5%;
+}
+
+.fin-card {
+  z-index: 1;
+  width: 80%;
+  top: 10%;
+  right: 5%;
+  float: right;
+}
+
+@media only screen and (min-width: 768px) {
+  .info-card {
+    z-index: 1;
+    width: 50%;
+    top: 25%;
+    left: 5%;
+  }
+
+  .fin-card {
+    z-index: 1;
+    width: 50%;
+    top: 25%;
+    right: 5%;
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 1084px) {
+  .info-card {
+    z-index: 1;
+    width: 40%;
+    top: 25%;
+    left: 5%;
+  }
+
+  .fin-card {
+    z-index: 1;
+    width: 40%;
+    top: 25%;
+    right: 5%;
+    float: right;
+  }
+}
+
+.mat-grid-tile .mat-figure {
+  align-items: flex-start !important;
+}
+
+.mpadding {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 15px;
+}
+
+section h2.section-heading {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+section h3.section-subheading {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+#portfolio .portfolio-item {
+  right: 0;
+  margin: 0 0 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-hero-item {
+  height: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.c-heading-2 {
+  font-size: 2em;
+  line-height: 2em;
+}
+
+.c-heading-1,
+.c-heading-2 {
+  letter-spacing: -0.01em;
+  font-weight: 100;
+}
+
+.m-highlight-feature picture.c-image {
+  width: 100%;
+  max-width: 100%;
+}
+
+picture.c-image {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .m-highlight-feature {
+    display: block;
+  }
+
+  .c-heading-2 {
+    font-size: 3em;
+    line-height: 2em;
+  }
+}
+
+.m-highlight-feature {
+  height: 500px;
+  position: relative;
+}
+
+.m-highlight-feature:before,
+.m-highlight-feature:after {
+  content: " ";
+  display: table;
+}
+
+@media only screen and (min-width: 768px) {
+  .m-highlight-feature.f-align-left>div {
+    left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .m-highlight-feature.f-align-right>div {
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .m-highlight-feature>div {
+    width: 364px;
+    height: 408px;
+  }
+}
+
+@media only screen and (min-width: 1084px) {
+  .m-highlight-feature>div {
+    margin: 0 48px;
+    width: 316px;
+    height: 336px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .m-highlight-feature>div {
+    padding-left: 24px;
+    padding-right: 24px;
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 36px;
+    width: 316px;
+    height: 336px;
+    top: 24px;
+    top: calc(50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #fff;
+    color: #000;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.m-highlight-feature>div {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 60%;
+  text-align: center;
+}
+
+.mainPage {
+  overflow: hidden;
+}

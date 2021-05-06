@@ -1,0 +1,70 @@
+#headerh2:before {
+  content: " ";
+  top: 50%;
+  height: 2px;
+  width: 45px;
+  margin: 6px 10px;
+  display: inline-block;
+  zoom: 1;
+  background: #333;
+}
+
+#headerh2:after {
+  content: " ";
+  top: 50%;
+  height: 2px;
+  width: 45px;
+  margin: 6px 10px;
+  display: inline-block;
+  zoom: 1;
+  background: #333;
+}
+
+h2 {
+  margin-left: 40%;
+}
+
+
+.contactView {
+  min-height: 600px;
+  padding-top: 400px;
+  margin-left: 40%;
+}
+
+.contactPage {
+  background-size: cover;
+  background-position: top;
+  background-image: url('../../assets/image3.jpg');
+  background-position-y: top;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 148px);
+}
+
+.contact-card {
+  width: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-card {
+    width: 450px;
+  }
+}
+
+@media only screen and (min-width: 1084px) {
+  .contact-card {
+    width: 450px;
+  }
+}
+
+.contact-container {
+  width: 100%;
+}
+
+mat-form-field.mat-form-field {
+  width: -webkit-fill-available;
+}
+
+.rightBtn {
+  text-align: end;
+  color: green;
+}
