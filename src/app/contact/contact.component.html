@@ -1,38 +1,42 @@
-<h2 id="headerh2">CONTACT</h2>
+<div id="contact">
 
-<div class="contactPage">
-  <div class="contactView">
-    <mat-card class="contact-card">
-      <mat-card-header>
-        <mat-card-title>Send me a note</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <form class="contact-container" [formGroup]="contactForm">
-          <mat-form-field>
-            <mat-label>Name</mat-label>
-            <input matInput name="name" formControlName="name" />
-          </mat-form-field>
-          <br />
-          <mat-form-field>
-            <mat-label>Email</mat-label>
-            <input matInput name="email" formControlName="email" required />
-            <mat-error *ngIf="contactForm.controls.email.invalid">{{
+  <h2 id="headerh2">CONTACT</h2>
+
+  <div class="contactPage">
+    <div class="contactView">
+      <mat-card class="contact-card">
+        <mat-card-header>
+          <mat-card-title>Send me a note</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <form class="contact-container" [formGroup]="contactForm">
+            <mat-form-field>
+              <mat-label>Name</mat-label>
+              <input matInput name="name" formControlName="name" />
+            </mat-form-field>
+            <br />
+            <mat-form-field>
+              <mat-label>Email</mat-label>
+              <input matInput name="email" formControlName="email" required />
+              <mat-error *ngIf="contactForm.controls.email.invalid">{{
                 getErrorMessage()
               }}</mat-error>
-          </mat-form-field>
-          <br />
-          <mat-form-field>
-            <mat-label>Message</mat-label>
-            <textarea matInput formControlName="message"></textarea>
-          </mat-form-field>
-        </form>
-      </mat-card-content>
-      <mat-card-actions class="rightBtn">
-        <mat-progress-bar *ngIf="sendingInfo" mode="indeterminate"></mat-progress-bar>
-        <button type="submit" [disabled]="!contactForm.valid" mat-button (click)="sendInfo($event)">
-          SEND
-        </button>
-      </mat-card-actions>
-    </mat-card>
+            </mat-form-field>
+            <br />
+            <mat-form-field>
+              <mat-label>Message</mat-label>
+              <textarea matInput formControlName="message"></textarea>
+            </mat-form-field>
+          </form>
+        </mat-card-content>
+        <mat-card-actions class="rightBtn">
+          <mat-progress-bar *ngIf="sendingInfo" mode="indeterminate"></mat-progress-bar>
+          <button type="submit" [disabled]="!contactForm.valid" mat-button (click)="sendInfo($event)">
+            SEND
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
   </div>
+
 </div>

@@ -1,3 +1,4 @@
+
 #headerh2:before {
   content: " ";
   top: 50%;
@@ -21,5 +22,5 @@
 }
 
 h2 {
-  margin-left: 40%;
+  margin-left: 45%;
 }
