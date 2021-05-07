@@ -23,3 +23,15 @@
 h2 {
   margin-left: 45%;
 }
+
+.mat-expansion-panel {
+  max-width: 1050px;
+  margin-left: 30%;
+  color: #1d1b1d;
+  background-color: #f1f1f1;
+}
+
+
+.mat-expansion-panel-header-title, .mat-expansion-panel-header-description, ::ng-deep .mat-expansion-indicator::after {
+  color: #1d1b1d !important;
+}
