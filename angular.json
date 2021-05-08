@@ -26,7 +26,8 @@
             "styles": [{
                 "input": "src/app/themes/myThemes.scss"
               },
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": []
           },
@@ -90,7 +91,8 @@
             "styles": [{
                 "input": "src/app/themes/myThemes.scss"
               },
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": []
           }

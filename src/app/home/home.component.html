@@ -5,13 +5,14 @@
       <div class="intro-text">
         <div class="intro-lead-in">Bringing your needs to life</div>
         <div class="intro-heading">Full Stack Development</div>
-
         <button mat-fab color="accent" routerLink="/main" matTooltip="Enter">
           <i class="fas fa-door-open"></i>
         </button>
-
       </div>
     </div>
     <img mat-card-image class="heroImg" src="../../assets/roaderland.jpg" alt="Ireland" />
   </div>
+  <mat-card class="invisible">
+    <!-- I don't know why this needs to be here, but without it scaling breaks for the image above -->
+  </mat-card>
 </div>
