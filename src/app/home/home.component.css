@@ -210,13 +210,6 @@ picture.c-image {
   }
 }
 
-.m-highlight-feature>div {
-  padding-left: 12px;
-  padding-right: 12px;
-  width: 60%;
-  text-align: center;
-}
-
 .mainPage {
   overflow: hidden;
 }

@@ -1,0 +1,34 @@
+.github {
+  margin-left: 30px;
+}
+
+.title {
+  display: block;
+  margin-left: 30%;
+  margin-right: auto;
+  width: 50%;
+}
+
+.title, .userContainer {
+  padding: 10px;
+}
+
+::ng-deep.mat-label,
+::ng-deep.mat-list-item,
+::ng-deep.mat-form-field,
+::ng-deep.mat-hint,
+::ng-deep.mat-focused,
+::ng-deep.mat-form-field-label,
+::ng-deep.mat-form-field-underline,
+::ng-deep.mat-form-field-appearance-outline,
+::ng-deep.mat-form-field-outline {
+  color: #000000 !important;
+}
+
+.userContainer .mat-icon {
+  font-size: 2.3em !important;
+}
+
+.userContainer .mat-icon:hover {
+  color: #008000 !important;
+}

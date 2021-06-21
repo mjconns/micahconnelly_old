@@ -1,0 +1,16 @@
+.title {
+  display: block;
+  margin-left: 30%;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+#chartdiv, #chartdiv2, #chartdiv3 {
+  height: 50%;
+  padding: 20px;
+}
+
+.chartTitle {
+  padding-left: 20px;
+}

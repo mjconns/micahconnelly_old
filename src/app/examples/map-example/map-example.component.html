@@ -1,0 +1,86 @@
+<div class="title">
+  <mat-card-title>
+    Accessing Google Maps API via <a href="https://developers.google.com/maps"
+      target="_blank">https://developers.google.com/maps</a>
+  </mat-card-title>
+</div>
+
+<div id="googlewrapper">
+  <div id="oldtimeradio" class="form-group">
+    <label class="radio-inline">
+      <input type="radio" name="optradio" [value]="2" [(ngModel)]="this.radioData" (click)="setStyle('2')">Night</label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" [value]="3" [(ngModel)]="this.radioData"
+        (click)="setStyle('3')">Normal</label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" [value]="1" [(ngModel)]="this.radioData"
+        (click)="setStyle('1')">Silver</label>
+  </div>
+  <div id="searcharea">
+
+    <div id="searchfield">
+
+      <mat-form-field appearance="outline">
+        <mat-label>Input address</mat-label>
+        <input matInput type="text" [(ngModel)]="value" placeholder="Address Look Up..." id="searchfield"
+          [(ngModel)]="this.searchValue" (keydown.enter)="findSearch()">
+        <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <button id="searchbutton" mat-icon-button color="primary" aria-label="Search" (click)="findSearch()">
+        <mat-icon>search</mat-icon>
+      </button>
+
+    </div>
+
+
+  </div>
+  <ngui-map center="Omaha, Nebraska" style="width:100%;height:700px;margin-bottom:15px;" zoom=4 gestureHandling="greedy"
+    (mapReady$)="onMapReady($event)">
+  </ngui-map>
+
+  <div id="mapmenu">
+
+    <button mat-icon-button color="primary" aria-label="Traffic" id="traffic_button" (click)="this.setTrafficLayer()"
+      title="Traffic">
+      <mat-icon>traffic</mat-icon>
+    </button>
+
+    <button mat-icon-button color="primary" aria-label="Weather" id="weather_button" (click)="this.setNOAAKML()"
+      title="Weather Events">
+      <mat-icon>thermostat</mat-icon>
+    </button>
+
+    <button mat-icon-button color="primary" aria-label="Air Quality" id="air_button" (click)="setAirQualityKML()"
+      title="Air Quality">
+      <mat-icon>air</mat-icon>
+    </button>
+
+    <button mat-icon-button color="primary" aria-label="Fires" id="fire_button" (click)="setFireKML()" title="Fires">
+      <mat-icon>local_fire_department</mat-icon>
+    </button>
+
+    <button mat-icon-button color="primary" aria-label="Drawing" id="drawing_button" (click)="enableDrawing()"
+      title="Drawing">
+      <mat-icon>mode</mat-icon>
+    </button>
+
+
+
+    <!-- <li><a class="btn btn-primary btn-l" id="traffic_button" (click)="this.setMarkers()" title="Some Markers"><i class="fa fa-map-marker fa-inverse"></i></a></li> -->
+
+
+
+
+    <!-- <li><a class="btn btn-primary btn-l" id="directions_button" (click)="enableDirections()" title="Directions"><i class="fa fa-map-signs fa-inverse"></i></a></li> -->
+
+  </div>
+  <div id="directions" *ngIf="is_directions">
+    <input class="btn btn-primary btn-1" placeholder="From...." id="addressfrom" [(ngModel)]="this.addressFrom" />
+    <input class="btn btn-primary btn-1" placeholder="To...." id="addressto" [(ngModel)]="this.addressTo" />
+    <!-- <a id= "directionsbutton" class="btn btn-primary btn-l" (click)="getDirections()">Submit</a> -->
+  </div>
+  <div id="info_details" [innerHTML]="info_details"></div>
+</div>

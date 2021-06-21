@@ -22,5 +22,8 @@
 }
 
 h2 {
-  margin-left: 45%;
+  display: block;
+  margin-left: 40%;
+  margin-right: auto;
+  width: 50%;
 }

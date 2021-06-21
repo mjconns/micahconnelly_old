@@ -29,7 +29,8 @@
               "src/styles.scss",
               "./node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {
@@ -94,7 +95,8 @@
               "src/styles.scss",
               "./node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           }
         },
         "lint": {

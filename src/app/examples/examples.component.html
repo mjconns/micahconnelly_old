@@ -1,25 +1,8 @@
 <div id="examples">
   <mat-tab-group headerPosition="above" mat-align-tabs="center" backgroundColor="primary">
 
-    <mat-tab label="Webistes and examples">
+    <mat-tab label="Personal Site">
       <h2 id="headerh2">EXAMPLES</h2>
-      <mat-card class="card" backgroundColor="accent">
-        <mat-card-header>
-          <div mat-card-avatar class="header-image"></div>
-          <mat-card-title>Code examples</mat-card-title>
-          <mat-card-subtitle>Business and personal</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>I've worked on prjects involgin automation, process flow, web apps, and various API intergrations.</p>
-          <p>Please click through the tabs above see some varying examples of code work that I've.</p>
-        </mat-card-content>
-      </mat-card>
-    </mat-tab>
-
-    <!-- ADD something with AMCHARTS -->
-
-    <mat-tab label="My Site">
-      <!-- <h2 id="headerh2">EXAMPLES</h2> -->
       <mat-card class="card" backgroundColor="accent">
         <mat-card-header>
           <div mat-card-avatar class="header-image"></div>
@@ -29,38 +12,85 @@
         <img mat-card-image src="../../assets/mySite.png" alt="my site">
         <mat-card-content>
           <p>
+            This is where you can look under the ghood if the site you're visiting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>REPO</button>
+          <button mat-button routerLink="/home">
+            <span>Return to home</span>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-tab>
+
+    <mat-tab label="Google APIs">
+      <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="header-image"></div>
+          <mat-card-title>Integrating with Google's open APIs</mat-card-title>
+          <mat-card-subtitle>Google Maps API</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/examples/googleMaps.png" alt="google maps">
+        <mat-card-content>
+          <p>
+            Here's an example of accessing some of Google's APIs for Google Maps
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>REPO</button>
+          <button mat-button routerLink="/googlemaps">
+            <span>View</span>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-tab>
+
+    <mat-tab label="amCharts">
+      <mat-card class="card" backgroundColor="accent">
+        <mat-card-header>
+          <div mat-card-avatar class="header-image"></div>
+          <mat-card-title>Dataset examples using amCharts</mat-card-title>
+          <mat-card-subtitle>A powerful tool for presenting any data in a meaningful way</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/amCharts.png" alt="amCharts">
+        <mat-card-content>
+          <p>
             This is an image of the home page for my site (the one you're visiting now) and link to its repo.
           </p>
         </mat-card-content>
         <mat-card-actions>
           <button mat-button>REPO</button>
-          <button mat-button>Launch site</button>
+          <button mat-button routerLink="/amcharts">View</button>
         </mat-card-actions>
       </mat-card>
     </mat-tab>
 
-    <mat-tab label="Sunny Vista Services">
-      <!-- <h2 id="headerh2">EXAMPLES</h2> -->
+    <mat-tab label="GitHub APIs">
       <mat-card class="card">
         <mat-card-header>
           <div mat-card-avatar class="header-image"></div>
-          <mat-card-title>Business Site</mat-card-title>
-          <mat-card-subtitle>www.SunnyVistaServices.com</mat-card-subtitle>
+          <mat-card-title>Connecting to public user data available from GitHub</mat-card-title>
+          <mat-card-subtitle>GitHub user API</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image src="../../assets/group.jpg" alt="biz site">
+        <img mat-card-image src="../../assets/github.png" alt="github">
         <mat-card-content>
           <p>
-            Business website and repo.
+            Another API exampling getting data via GitHub; returing JSON to display user info within the web page.
+            Default will display me or you can search other users.
           </p>
         </mat-card-content>
         <mat-card-actions>
           <button mat-button>REPO</button>
-          <button mat-button>Launch site</button>
+          <button mat-button routerLink="/googlemaps">
+            <span>View</span>
+          </button>
         </mat-card-actions>
       </mat-card>
     </mat-tab>
 
-    <mat-tab label="Omaha Barbell">
+    <!-- TBD -->
+    <!-- <mat-tab label="Omaha Barbell">
       <mat-card class="card">
         <mat-card-header>
           <div mat-card-avatar class="header-image"></div>
@@ -78,7 +108,7 @@
           <button mat-button>Launch site</button>
         </mat-card-actions>
       </mat-card>
-    </mat-tab>
+    </mat-tab> -->
 
     <mat-tab label="Photography">
       <mat-card class="card">
@@ -96,26 +126,6 @@
         <mat-card-actions>
           <button mat-button>REPO</button>
           <button mat-button>Launch site</button>
-        </mat-card-actions>
-      </mat-card>
-    </mat-tab>
-
-    <mat-tab label="Google Location">
-      <mat-card class="card">
-        <mat-card-header>
-          <div mat-card-avatar class="header-image"></div>
-          <mat-card-title>Google API</mat-card-title>
-          <mat-card-subtitle>exampleApp site</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="../../assets/mySite.png" alt="my site">
-        <mat-card-content>
-          <p>
-            Example using google services
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>REPO</button>
-          <button mat-button>View example</button>
         </mat-card-actions>
       </mat-card>
     </mat-tab>

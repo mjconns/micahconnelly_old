@@ -1,0 +1,36 @@
+<div class="github">
+
+  <div class="title">
+    <mat-card-title>
+      Accessing GitHub public suers API via <a href="https://docs.github.com/en/rest/reference/users"
+        target="_blank">https://api.github.com/users/</a>
+    </mat-card-title>
+  </div>
+
+  <div class="userContainer">
+    <mat-form-field appearance="outline">
+      <mat-label>GitHub user</mat-label>
+      <input matInput #input minlength="1" placeholder="JaneDoe123" [(ngModel)]="user">
+      <mat-hint>email or username</mat-hint>
+    </mat-form-field>
+    <button mat-icon-button color="primary" aria-label="Search" (click)="getUserInfo(user);">
+      <mat-icon>search</mat-icon>
+    </button>
+  </div>
+
+  <mat-list role="list" *ngIf="gitHub">
+    <mat-list-item role="listitem" *ngIf="gitHub.name">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">check_box</mat-icon>
+      <strong>Name:</strong>&nbsp;{{gitHub.name}}
+    </mat-list-item>
+    <mat-list-item role="listitem" *ngIf="gitHub.login">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">check_box</mat-icon>
+      <strong>User:</strong>&nbsp;{{gitHub.login}}
+    </mat-list-item>
+    <mat-list-item role="listitem" *ngIf="gitHub.bio">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">check_box</mat-icon>
+      <strong>Bio:</strong>&nbsp;{{gitHub.bio}}
+    </mat-list-item>
+  </mat-list>
+
+</div>

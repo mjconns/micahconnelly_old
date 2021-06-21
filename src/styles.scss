@@ -3,5 +3,16 @@
 @import "./app/themes/myStyles.scss";
 @import "./app/themes/myThemes.scss";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #f6f6f6 !important;
+}

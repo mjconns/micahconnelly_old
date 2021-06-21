@@ -1,5 +1,8 @@
 h2 {
-  margin-left: 45%;
+  display: block;
+  margin-left: 40%;
+  margin-right: auto;
+  width: 50%;
 }
 
 #headerh2:before {
@@ -38,9 +41,13 @@ h4 {
   margin-top: 10px;
   margin-bottom: 10px;
   overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-image: url('../../assets/crestSmaller.png');
   background-size: cover;
 }

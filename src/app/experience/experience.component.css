@@ -21,17 +21,23 @@
 }
 
 h2 {
-  margin-left: 45%;
+  display: block;
+  margin-left: 40%;
+  margin-right: auto;
+  width: 50%;
 }
 
 .mat-expansion-panel {
-  max-width: 1050px;
-  margin-left: 30%;
+  max-width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   color: #1d1b1d;
   background-color: #f1f1f1;
 }
 
-
-.mat-expansion-panel-header-title, .mat-expansion-panel-header-description, ::ng-deep .mat-expansion-indicator::after {
+.mat-expansion-panel-header-title,
+.mat-expansion-panel-header-description,
+::ng-deep .mat-expansion-indicator::after {
   color: #1d1b1d !important;
 }
